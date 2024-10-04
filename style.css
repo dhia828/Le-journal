@@ -35,6 +35,9 @@ a{
   padding: 10px;
   border-radius: 10%;
 }
+/* .container .n2 {
+  position: fixed;
+} */
 nav h1{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -73,10 +76,10 @@ ul{
   font-family: "Cormorant Garamond", serif;
 }
 
-section{
+.article{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(3,auto);
   gap: 20px;
 }
 
@@ -104,9 +107,67 @@ section{
 p{
   font-family: "Cormorant Garamond", serif;
 }
-section h2,h3{
+.article h2,h3{
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-style: normal;
+}
+
+.send{
+  background-color: #eee;
+  height: 200px;
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.send img{
+  height: 200px;
+}
+.send div{
+  padding: 40px;
+}
+.send div input{
+  border: 0;
+  border-bottom: 1px solid;
+  background: #eee;
+  color:black;
+}
+.send div input [placeholder]{
+  color: black;
+}
+.send button{
+  background: black;
+  color: #eee;
+  border: 1px solid;
+  border-radius: 10%;
+}
+.send button:hover{
+  background: #eee;
+  color: black;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.content .c2{
+  flex-basis: 200px;
+}
+.c1 .c11{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.c2{
+  padding: 10px;
+}
+.c2 ul{
+  display: block;
+}
+.c2 li{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 20px 0px;
+  gap: 20px;
 }
 
